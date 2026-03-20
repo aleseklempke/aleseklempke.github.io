@@ -1,33 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --bg-color: #F1FFFA;
+    --text-color: #040F16;
+    --highlight-color-one: #0CA4A5;
+    --highlight-color-two: #0B4F6C;
+}
+
 body {
-    padding-top: 6rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-h1 {
-    font-size: 2.5rem;
+/* Hero Section */
+.hero-section {
+    background: var(--highlight-color-one);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-div.row {
-    background: var(--bs-primary-bg-subtle);
-    margin-bottom: 1em;
+.bg-light {
+    background-color: red;
 }
 
-h3 {
-    margin-top: 25vh;
+.hero-section h1 {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
 }
 
-div.row div {
-    padding: 5px;
-    border: 1px solid var(--bs-tertiary-color);
+h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
 }
 
-p {
-    font-size: 1.25rem;
+.hero-section .lead {
+    font-size: 1.5rem;
 }
 
-ul {
-    font-size: 1.25rem;
+.work-card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
 }
 
-ul li {
-    margin-bottom: 1rem;
+.work-card {
+     font-family: "Quicksand", sans-serif;
+     background-color: var(--highlight-color-one);
+}
+
+.btn {
+    background-color: var(--highlight-color-two);
+    padding: 10px;
+    border-color: var(--bg-color);
+}
+
+h2 {
+    font-weight: 700;
+    color: #333;
 }
