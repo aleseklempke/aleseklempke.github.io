@@ -19,14 +19,14 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url(../images/catkeyboard.webp);
+    background: url(../images/beach-waves.webp);
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #F1FFFA;
 }
 
 .bg-light {
@@ -36,6 +36,16 @@ body {
 .hero-section h1 {
     font-weight: 700;
     font-family: 'Playfair Display', serif;
+    color: #040F16
+}
+
+/* navigation */
+
+.nav-item {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
 }
 
 h2, h3, h4, h5 {
@@ -80,7 +90,7 @@ h2, h3, h4, h5 {
 
 h2 {
     font-weight: 700;
-    color: #333;
+    color: #040F16;
 }
 
 .modal-body img {
