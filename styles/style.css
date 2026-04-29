@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
     color: var(--text-color);
 }
 
@@ -26,7 +26,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #187c80;
 }
 
 .hero-content {
@@ -144,4 +143,37 @@ h2 {
 
 .modal-body img {
     width: 100%;
+}
+
+
+
+html, body {
+  height: 75;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
+.site-footer {
+  background-color: #187c80; /* change color */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
