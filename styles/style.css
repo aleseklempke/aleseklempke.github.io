@@ -19,13 +19,17 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-color: #187c80;
+    background-color: #F1FFFA;
     background-size: cover;
     background-position: 50% 50%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-section p.lead {
+    color: #040F16;
 }
 
 .hero-content {
@@ -77,19 +81,19 @@ body {
 .nav-link {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    color: white;
+    color: #F1FFFA;
     text-decoration: none;
 }
 
 .navbar-brand {
    font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    color: white;
+    color: #F1FFFA;
     text-decoration: none;
 }
 
 .navbar {
-    background-color: #040F16;
+    background-color: #187c80;
 }
 
 h2, h3, h4, h5 {
@@ -112,10 +116,10 @@ h2, h3, h4, h5 {
 }
 
 .carousel-inner img{
-    width: 100%;
+    width: 18%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    width: 100%;
+    width: 18%;
 }
 
 .carousel-control-prev-icon{
@@ -124,12 +128,6 @@ h2, h3, h4, h5 {
 
 .carousel-control-next-icon{
     background: var(--highlight-color-two);
-}
-
-.btn {
-    background-color: var(--highlight-color-two);
-    padding: 10px;
-    border-color: var(--bg-color);
 }
 
 h2 {
@@ -163,15 +161,17 @@ main {
 
 .site-footer {
   background-color: #187c80; /* change color */
-  color: white;
+  color: #F1FFFA;
   text-align: center;
   padding: 15px 0;
+  font-family: 'Playfair Display', serif;
 }
 
 .site-footer a {
-  color: white;
+  color: #F1FFFA;
   text-decoration: none;
   margin: 0 5px;
+  font-family: 'Playfair Display', serif;
 }
 
 .site-footer a:hover {
