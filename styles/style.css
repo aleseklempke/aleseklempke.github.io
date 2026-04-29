@@ -177,3 +177,34 @@ main {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+.photo-collage {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.collage-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.collage-row img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.row-5 img {
+  width: calc((100% - 72px) / 5);
+}
+
+.row-4 {
+  justify-content: space-between;
+}
+
+.row-4 img {
+  width: calc((100% - -80px) / 5);
+}
