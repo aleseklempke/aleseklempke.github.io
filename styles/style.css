@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--text-color);
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
@@ -22,10 +22,11 @@ body {
     background-color: #F1FFFA;
     background-size: cover;
     background-position: 50% 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* height: 100vh; */
+    padding-top: 150px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .hero-section p.lead {
@@ -45,7 +46,7 @@ body {
 }
 
 .hero-img {
-    width: 380px;  /* adjust size */
+    width: 100%;  /* adjust size */
     height: auto;
 }
 
