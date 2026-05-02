@@ -176,26 +176,7 @@ h2, h3, h4, h5 {
      background-color: var(--highlight-color-one);
 }
 
-.carousel-inner img{
-    width: 18%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    width: 18%;
-}
 
-.carousel-control-prev-icon{
-    background: var(--highlight-color-two);
-}
-
-.carousel-control-next-icon{
-    background: var(--highlight-color-two);
-}
-
-.btn {
-    background-color: var(--highlight-color-two);
-    padding: 10px;
-    border-color: var(--bg-color);
-}
 
 h2 {
     font-weight: 700;
@@ -210,7 +191,46 @@ h2 {
     width: 100%;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+}
 
+.carousel-track {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.4s ease;
+}
+
+.carousel-track img {
+  width: 250px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 45px;
+  color: #187c80;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 15px;
+}
+
+.carousel-btn.right {
+  right: 15px;
+}
 
 html, body {
   height: 75;
