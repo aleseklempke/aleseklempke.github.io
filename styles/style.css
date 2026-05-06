@@ -406,6 +406,16 @@ main {
   color: #187c80;
 }
 
+/* about page */
+
+.about-hero-section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+
 @media screen and (max-width: 900px) {
   .collage-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -417,9 +427,6 @@ main {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 @keyframes scroll-left {
   0% { transform: translateX(0); }
