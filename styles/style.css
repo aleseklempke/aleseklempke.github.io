@@ -193,14 +193,21 @@ h2 {
 
 .carousel {
   position: relative;
-  overflow-x: scroll;
   padding: 30px 0;
+  overflow: hidden; /* Hide scrollbar for the auto-animation */
+  white-space: nowrap;
 }
 
 .carousel-track {
   display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
   gap: 20px;
   transition: transform 0.4s ease;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused; /* Allows user to stop it */
 }
 
 .carousel-track img {
@@ -211,25 +218,6 @@ h2 {
   border-radius: 20px;
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 45px;
-  color: #187c80;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.carousel-btn.left {
-  left: 15px;
-}
-
-.carousel-btn.right {
-  right: 15px;
-}
 
 html, body {
   height: 75;
@@ -428,4 +416,12 @@ main {
   .collage-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Adjust based on duplication */
 }
