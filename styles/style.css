@@ -43,6 +43,7 @@ body {
     color: #040F16;
     font-size: 27px;
     margin-top: 27px;
+    font-weight: 400;
 }
 
 .hero-content {
@@ -270,10 +271,12 @@ main {
   vertical-align: middle;
 }
 
-.photo-collage {
+.about-photo-collage {
   width: 90%;
   max-width: 1200px;
   margin: 50px auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .collage-row {
@@ -304,8 +307,10 @@ main {
 /* Grid Section */
 .photo-collage {
   padding: 10px;
-  margin-top: 50px; /* adjust this number */
-  margin-bottom: 15px;
+  margin-top: 200px; /* adjust this number */
+  margin-bottom: 38px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .collage-grid {
