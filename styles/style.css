@@ -27,7 +27,7 @@ body {
     background-size: cover;
     background-position: 50% 50%;
      /* height: 100vh; */
-    padding-top: 150px;
+    padding-top: 80px;
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -36,10 +36,13 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 0px;
 }
 
 .hero-section p.lead {
     color: #040F16;
+    font-size: 27px;
+    margin-top: 27px;
 }
 
 .hero-content {
@@ -196,14 +199,16 @@ h2 {
   padding: 30px 0;
   overflow: hidden; /* Hide scrollbar for the auto-animation */
   white-space: nowrap;
+  margin-top: -15px; /* adjust this number */
+  margin-bottom: 15px;
 }
 
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 27s linear infinite;
   gap: 20px;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
 .carousel-track:hover {
@@ -299,7 +304,8 @@ main {
 /* Grid Section */
 .photo-collage {
   padding: 10px;
-  margin-top: 200px; /* adjust this number */
+  margin-top: 50px; /* adjust this number */
+  margin-bottom: 15px;
 }
 
 .collage-grid {
@@ -413,6 +419,37 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 200px;
+  color: #040F16;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 20px !important;
+  margin-bottom: 0px !important;
+}
+
+.about-hero-section h1 {
+  font-size: 4.3rem !important;
+  line-height: 0.9;
+  word-spacing: 4px;
+  letter-spacing: 0px;
+}
+
+.about-hero-section p.lead {
+  color: #040F16;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+
+   text-align: left;
+   max-width: 900px;
+   line-height: 1.8;
+   word-spacing: 0px;
+   letter-spacing: 0px;
+}
+
+.about-hero-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateX(15px);
 }
 
 video {
