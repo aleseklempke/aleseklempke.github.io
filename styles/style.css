@@ -466,6 +466,7 @@ main {
 
     width: 90%;
     margin: 80px auto;
+    padding-top: 130px;
 }
 
 .video-item {
@@ -477,7 +478,7 @@ main {
 
 /* Horizontal videos */
 .video-item.horizontal {
-    height: 220px;
+    height: 350px;
 }
 
 /* Vertical videos */
@@ -501,6 +502,7 @@ main {
 .video-item:hover video {
     transform: scale(1.04);
 }
+
 
 
 @media screen and (max-width: 900px) {
