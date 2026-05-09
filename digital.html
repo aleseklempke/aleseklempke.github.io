@@ -57,63 +57,63 @@
 		<!-- Video collage -->
 		<section class="video-collage">
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
+			<div class="video-item vertical" onclick="openVideoModal('videos/italytiktok.MP4')">
+				<video controls muted playsinline>
 					<source src="videos/italytiktok.MP4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
+			<div class="video-item vertical" onclick="openVideoModal('videos/floridatiktok.MP4')">
+				<video controls muted playsinline>
 					<source src="videos/floridatiktok.mp4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
+			<div class="video-item vertical" onclick="openVideoModal('videos/hollywoodtiktok.MP4')">
+				<video controls muted playsinline>
 					<source src="videos/hollywoodtiktok.MP4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
-					<source src="videos/lifetime massage.MP4" type="video/mp4">
+			<div class="video-item vertical" onclick="openVideoModal('videos/lifetimemassage.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/lifetimemassage.MP4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
+			<div class="video-item vertical" onclick="openVideoModal('videos/CBCtiktok.MP4')">
+				<video controls muted playsinline>
 					<source src="videos/CBCtiktok.mp4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
-					<source src="videos/" type="video/mp4">
+			<div class="video-item vertical" onclick="openVideoModal('videos/batchallenge.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/batchallenge.MP4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
-					<source src="videos/video7.mp4" type="video/mp4">
+			<div class="video-item vertical" onclick="openVideoModal('videos/swiganimation.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/swiganimation.mp4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item vertical">
-				<video autoplay muted loop playsinline>
-					<source src="videos/video8.mp4" type="video/mp4">
+			<div class="video-item vertical" onclick="openVideoModal('videos/hydrojug.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/hydrojug.mp4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item horizontal">
-				<video autoplay muted loop playsinline>
-					<source src="videos/video11.mp4" type="video/mp4">
+			<div class="video-item horizontal" onclick="openVideoModal('videos/mashvideo.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/mashvideo.MP4" type="video/mp4">
 				</video>
 			</div>
 
-			<div class="video-item horizontal">
-				<video autoplay muted loop playsinline>
-					<source src="videos/video12.mp4" type="video/mp4">
+			<div class="video-item horizontal" onclick="openVideoModal('videos/eosanimation.MP4')">
+				<video controls muted playsinline>
+					<source src="videos/eosanimation.mp4" type="video/mp4">
 				</video>
 			</div>
 
@@ -135,6 +135,39 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<div id="videoModal" class="video-modal">
+			<span class="video-close" onclick="closeVideoModal()">&times;</span>
+
+			<div class="video-modal-content">
+				<video id="modalVideo" controls muted playsinline>
+					<source id="modalVideoSource" src="" type="video/mp4">
+				</video>
+			</div>
+		</div>
+
+		<script>
+        function openVideoModal(videoSrc) {
+            const modal = document.getElementById("videoModal");
+            const modalVideo = document.getElementById("modalVideo");
+            const modalVideoSource = document.getElementById("modalVideoSource");
+
+            modal.style.display = "block";
+            modalVideoSource.src = videoSrc;
+            modalVideo.load();
+        }
+
+        function closeVideoModal() {
+           const modal = document.getElementById("videoModal");
+           const modalVideo = document.getElementById("modalVideo");
+
+           modal.style.display = "none";
+           modalVideo.pause();
+           modalVideo.currentTime = 0;
+        }
+        </script>
+
+
 	</body>
 </html>	
 
