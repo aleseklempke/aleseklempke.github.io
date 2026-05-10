@@ -200,7 +200,7 @@ h2 {
   padding: 30px 0;
   overflow: hidden; /* Hide scrollbar for the auto-animation */
   white-space: nowrap;
-  margin-top: -15px; /* adjust this number */
+  margin-top: -40px; /* adjust this number */
   margin-bottom: 15px;
 }
 
