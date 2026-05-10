@@ -467,6 +467,8 @@ main {
     width: 90%;
     margin: 80px auto;
     padding-top: 130px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .video-item {
@@ -545,7 +547,7 @@ main {
 
 .experience-page {
   min-height: 100vh;
-  padding-bottom: 80px;
+  padding-bottom: 28px;
 }
 
 .experience-title {
@@ -572,12 +574,14 @@ main {
 }
 
 .experience-label {
-  color: #4f8588;
-  font-family: Georgia, serif;
-  font-size: 52px;
+  color: #040F16;
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
   font-weight: bold;
   text-align: center;
   justify-self: center;
+  margin-top: 95px;
+  line-height: 1.1;
 }
 
 .large-label {
@@ -585,25 +589,30 @@ main {
 }
 
 .experience-info {
-  background-color: #4f8588;
+  background-color: #187c80;
   color: white;
-  font-family: Georgia, serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
-  padding: 35px 45px;
   border-radius: 60px;
-  width: 80%;
+  width: 65%;
   justify-self: center;
+  margin-top: 50px;
+  margin-bottom: -75px;
+  padding: 35px 25px;
 }
 
 .experience-info h2 {
   font-size: 32px;
   margin-bottom: 12px;
+  margin: 0;
 }
 
 .experience-info p {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.9;
   margin-bottom: 22px;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 
