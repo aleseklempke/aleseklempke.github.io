@@ -414,7 +414,7 @@ main {
 }
 
 .close:hover {
-  color: #187c80;
+  color: #b7d0dc;
 }
 
 /* about page */
@@ -543,7 +543,7 @@ main {
 }
 
 .video-close:hover {
-  color: #187c80;
+  color: #b7d0dc;
 }
 
 .experience-page {
@@ -590,7 +590,7 @@ main {
 }
 
 .experience-info {
-  background-color: #187c80;
+  background-color: #b7d0dc;
   color: white;
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -617,72 +617,81 @@ main {
 }
 
 
-/* ENTIRE SECTION */
+
+
 .contact-section {
-    display: flex;
+     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    gap: 90px;
-
-    max-width: 1400px;
-
-    margin: 120px auto;
-    padding: 0 80px;
-    padding-top: 85px;
+    gap: 50px; /* controls space between image and text */
+    padding: 80px;
+    padding-top: 205px;
 }
 
-/* LEFT IMAGE */
-.contact-image img {
-    width: 400px; 
-    height: 490px;
+.contact-image {
+    flex-shrink: 0;
+}
 
+.contact-image img {
+    width: 380px;  /* adjust size */
+    height: auto;
     border: 5px solid #b7d0dc;
     border-radius: 20px;    
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
-    object-fit: cover;
 }
 
-/* RIGHT SIDE */
 .contact-content {
-    max-width: 600px;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    max-width: 750px;
 }
 
-/* TITLE */
 .contact-content h1 {
-    font-size: 3.3rem;
-    font-weight: 350;
+    font-size: 3.5rem;
     margin-bottom: 25px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
 }
 
-/* SMALL TEXT */
 .subtitle {
-    font-size: 1.8rem;
-    margin-bottom: 45px;
-    font-weight: 440;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
-/* LINKS */
+.email-line {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.email-line span,
+.check-line {
+    color: #040F16;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+}
+
+.check-line {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    font-family: "Quicksand", sans-serif;
+}
+
 .contact-links {
     display: flex;
-    gap: 55px;
-    margin-bottom: 35px;
+    gap: 60px;
 }
 
 .contact-links a {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: black;
     text-decoration: underline;
-}
-
-/* EMAIL */
-.email {
-    font-size: 2rem;
-    margin-bottom: 55px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 
