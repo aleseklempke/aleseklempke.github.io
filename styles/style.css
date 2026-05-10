@@ -440,7 +440,8 @@ main {
 .about-hero-section p.lead {
   color: #040F16;
   font-family: "Quicksand", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 500;
 
    text-align: left;
    max-width: 900px;
@@ -615,6 +616,74 @@ main {
   font-family: "Quicksand", sans-serif;
 }
 
+
+/* ENTIRE SECTION */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+
+    max-width: 1400px;
+
+    margin: 120px auto;
+    padding: 0 80px;
+    padding-top: 85px;
+}
+
+/* LEFT IMAGE */
+.contact-image img {
+    width: 400px; 
+    height: 490px;
+
+    border: 5px solid #b7d0dc;
+    border-radius: 20px;    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    object-fit: cover;
+}
+
+/* RIGHT SIDE */
+.contact-content {
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TITLE */
+.contact-content h1 {
+    font-size: 3.3rem;
+    font-weight: 350;
+    margin-bottom: 25px;
+}
+
+/* SMALL TEXT */
+.subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 45px;
+    font-weight: 440;
+}
+
+/* LINKS */
+.contact-links {
+    display: flex;
+    gap: 55px;
+    margin-bottom: 35px;
+}
+
+.contact-links a {
+    font-size: 1.9rem;
+    color: black;
+    text-decoration: underline;
+}
+
+/* EMAIL */
+.email {
+    font-size: 2rem;
+    margin-bottom: 55px;
+}
 
 
 @media screen and (max-width: 900px) {
