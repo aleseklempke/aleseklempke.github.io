@@ -207,7 +207,7 @@ h2 {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-left 27s linear infinite;
+  animation: scroll-left 50s linear infinite;
   gap: 20px;
   transition: transform 0.3s ease;
 }
