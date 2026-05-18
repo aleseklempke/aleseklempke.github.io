@@ -139,6 +139,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 24%;
+    border-bottom: 5px solid #b7d0dc;
 
     height: 150px; /* adjust this to control how much shows */
 }
@@ -249,6 +250,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 48%;
+  border-top: 5px solid #b7d0dc;
 
   height: 120px; /* adjust as needed */
 }
