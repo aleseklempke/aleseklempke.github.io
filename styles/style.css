@@ -680,7 +680,7 @@ main {
 
 
 .contact-section {
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px; /* controls space between image and text */
@@ -710,21 +710,21 @@ main {
 
 .contact-content h1 {
     font-size: 3.5rem;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     font-weight: 500;
     font-family: "Quicksand", sans-serif;
 }
 
 .subtitle {
     font-size: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
 }
 
 .email-line {
     font-size: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
 }
@@ -738,13 +738,14 @@ main {
 
 .check-line {
     font-size: 2rem;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     font-family: "Quicksand", sans-serif;
 }
 
 .contact-links {
     display: flex;
     gap: 60px;
+    margin-bottom: 40px;
 }
 
 .contact-links a {
