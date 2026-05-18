@@ -43,7 +43,8 @@ body {
     color: #040F16;
     font-size: 27px;
     margin-top: 27px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
 }
 
 .hero-content {
