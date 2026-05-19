@@ -2,23 +2,99 @@
 /* this is a media query that will apply the styles you add only at certain breakpoints. this one is set up to target screens with a maximum width of 768px — which is the bootstrap 'md' breakpoint. you can adjust that number to be anything. */
 
 @media only screen and (max-width: 768px) {
-    
-    /* mobile specific styling rules go in here */
 
-    .hero-section {
-        /* set your hero to be larger than a screen if needed to avoid overlap with the carousel on mobile */
-        height: auto;   
-    }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
 
-    .hero-img {
-        /* set your hero images to fill the space, not have a set width */
-        width: 100%;
-    }
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
 
-    .carousel-track {
-        /* add some margin back on top */
-        margin-top: 40px;
-    }
+  header {
+    display: block;
+    width: 100%;
+    background-color: #188283;
+    position: relative;
+    z-index: 9999;
+  }
+
+  nav {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 25px 15px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-section h1 {
+    font-size: 55px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .carousel-track {
+    margin-top: 20px;
+  }
+
+  .container,
+  .row,
+  .content,
+  .about-content,
+  .experience-content,
+  .video-row {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .row,
+  .about-content,
+  .experience-content,
+  .video-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px 20px;
+  }
+}
 
 
 
