@@ -43,10 +43,11 @@
 							<a class="nav-link" href="aboutme.html">About Me</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" role="button"
-							data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
 								My Work
 							</a>
+
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="print.html">Print</a></li>
 								<li><a class="dropdown-item" href="digital.html">Digital</a></li>
@@ -144,7 +145,12 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-		
+		<script>
+		function toggleMenu() {
+		const nav = document.getElementById("mobileNav");
+		nav.classList.toggle("active");
+		}
+		</script>
 
 	</body>
 </html>	
