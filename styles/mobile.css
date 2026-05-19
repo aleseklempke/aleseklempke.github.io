@@ -20,7 +20,34 @@
         margin-top: 40px;
     }
 
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        z-index: 9999;
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: white;
+    }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9998;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    }
 
 
 
