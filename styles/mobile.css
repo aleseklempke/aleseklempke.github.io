@@ -55,7 +55,23 @@
     .nav-links.active {
         display: flex;
     }
+
+    .about-section,
+    .about-hero,
+    .hero-content {
+        padding-top: 20px;
+        margin-top: 0;
     }
+
+    .hero-img {
+        margin-top: 0;
+        justify-content: center !important;
+        align-items: center !important
+    }
+
+    
+
+}
 
 
 
