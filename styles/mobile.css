@@ -1,0 +1,29 @@
+
+/* this is a media query that will apply the styles you add only at certain breakpoints. this one is set up to target screens with a maximum width of 768px — which is the bootstrap 'md' breakpoint. you can adjust that number to be anything. */
+
+@media only screen and (max-width: 768px) {
+    
+    /* mobile specific styling rules go in here */
+
+    .hero-section {
+        /* set your hero to be larger than a screen if needed to avoid overlap with the carousel on mobile */
+        height: auto;   
+    }
+
+    .hero-img {
+        /* set your hero images to fill the space, not have a set width */
+        width: 100%;
+    }
+
+    .carousel-track {
+        /* add some margin back on top */
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+
+}
